@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #212121;
+    color: #f2f2f2;
+    text-align: center;
+}  
+
+/* Estilo del encabezado */
+header {
+    background-color: #B50000;
+    color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del logo */
+.header_logo {
+    width: 50px;
+    border-radius: 150%;
+    float: left;
+    padding: 0;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+.container {
+    margin-left: 0%;
+    max-width: 100%;
+    background-color: #333;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+main {
+    margin-left: 0%;
+    max-width: 100%;
+    background-color: #333;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.img_button {
+    height: 20px;
+    width: 20px;
+    align-items: right;
+}
+
+/* Estilo de los carros */
+.car-section {
+    margin: 20px;
+}
+
+.section_car {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor para el contenido del carro */
+.car-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.car-text {
+    flex: 1;
+}
+
+.car-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; 
+}
+
+/* Botones de navegación */
+.car-buttons {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+    margin: 20px; 
+}
+
+.car-buttons button {
+    background-color: #3c3d3c;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.car-buttons button:hover {
+    background-color: #525252;
+}
+
+.texto__inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    justify-content: center;
+}
+
+p {
+    padding: 10px;
+}
+
+.image__container img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    min-width: 400px;
+    max-width: 500px;
+    container-name: image_car;
+}
+
+
+/* Estilos de la galería de carros */
+.section_car {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    color: white;
+}
+
+#section_car-BMW {
+    background-color: #DE0000;
+}
+#section_car-jaguar {
+    background-color: #010100;
+}
+#section_car-rollsroyce {
+    background-color: #DE0000;
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content:left;
+    align-items:first-baseline;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    color: #3c3d3c;
+}
+
+/* Estilos del título del formulario */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Estilos de los grupos del formulario */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Estilos de las etiquetas */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Estilos de los campos de entrada */
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+/* Estilos del botón */
+.form-group button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del botón al pasar el ratón */
+.form-group button:hover {
+    background-color: #555;
+}
+
+/* Barra inferior */
+footer {
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Fin estilos del formulario */
+
+/* Responsividad */
+@media (max-width: 800px) {
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-bottom: 10px;
+    }
+
+    .text-container {
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .section_car {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .car-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-image img {
+        max-width: 100%;
+    }
+
+    .car-buttons {
+        flex-direction:row;
+        align-items: center;
+    }
+}

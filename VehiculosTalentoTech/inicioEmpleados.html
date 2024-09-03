@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de carros</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="src/login.js"></script>
+    <link rel="short icon" href="Multimedia/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Venta de carros<img class="header_logo" src="Multimedia/favicon.png" alt="header_logo"></h1>
+    </header>
+    <nav>  
+        <div>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="Sobre Nosotos" target="_self">Sobre nosotros</a></li>
+                <li><a href="Servicios" target="_self">Servicios</a></li>
+                <li><a href="registro.html" target="">Registro</a></li>
+                <li><a href="inicioEmpleados.html" target="_self">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="form-container">
+            <h2>Inicio de sesión para empleados</h2>
+            <form id="inicio_usuarios">
+                <div class="form-group">
+                    <label for="empleado_id">Usuario:</label>
+                    <input type="text" id="empleado_id" name="empleado_id" required autocomplete="empleado_id">
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div id="error-message" style="color: red; display: none;">Las contraseñas no coinciden.</div>
+                <div class="form-group">
+                    <button type="submit">Iniciar sesión</button>
+                </div>
+            </form>
+            <p id="loginMessage"></p>
+        </section>
+        </main>
+    <footer> <strong>Venta de vehiculos de alta gama</strong> Copyright 2024</footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de carros</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="Multimedia/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Venta de carros<img class="header_logo" src="Multimedia/favicon.png" alt="header_logo"></h1>
+    </header>
+    <nav>  
+        <div>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="sobre-nosotros.html" target="_self">Sobre nosotros</a></li>
+                <li><a href="servicios.html" target="_self">Servicios</a></li>
+                <li><a href="registro.html" target="_self">Registro</a></li>
+                <li><a href="inicioEmpleados.html" target="_self">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="form-container">
+            <h2>Registro</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="nombre_cliente">Nombre completo:</label>
+                    <input type="text" id="nombre_cliente" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="correo_cliente" id="correo_cliente" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div id="error-message" style="color: red; display: none;">Las contraseñas no coinciden.</div>
+                <div class="form-group">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer> 
+        <strong>Venta de vehículos de alta gama</strong> &copy; 2024
+    </footer>
+</body>
+</html>

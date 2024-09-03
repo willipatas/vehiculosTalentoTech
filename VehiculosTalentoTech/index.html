@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de carros</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="short icon" href="Multimedia/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Venta de carros<img class="header_logo" src="Multimedia/favicon.png" alt="header_logo"></h1>
+    </header>
+    <nav>  
+        <div>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="Sobre Nosotos" target="_self">Sobre nosotros</a></li>
+                <li><a href="Servicios" target="_self">Servicios</a></li>
+                <li><a href="registro.html" target="_self">Registro</a></li>
+                <li><a href="inicioEmpleados.html" target="_self">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <SECTION class="intro">
+        <div class="container">
+            <div class="image-container">
+              <img id="imgIdbmw" src="Multimedia/conjunto-fotos-autos.avif">
+            </div>
+            <div class="text-container">
+              Vive la experiencia de conducir un auto de lujo en Bogotá. Nuestra flota incluye los modelos más exclusivos de marcas como Porsche, Ferrari y Lamborghini. Ofrecemos alq+uiler por horas, días o semanas, con la posibilidad de contratar un conductor privado. ¡Reserva ahora y disfruta de un viaje inolvidable!
+            </div>
+          </div>
+    </SECTION>
+    <main>
+        <section class="car-section">
+            <div class="section_car" id="section_car-BMW">
+                <div class="car-content">
+                    <div class="car-text">
+                        <h2 class="texto__inicial">Lleva tu BMW</h2>
+                        <p>
+                            Motor: Potente y eficiente, disponible en gasolina y diésel. Potencia desde 333 CV hasta 625 CV en el M8 Competition.
+                            Consumo: Aproximado: 10.7-11.0 l/100 km (M850i xDrive) y 11.2-11.6 l/100 km (M8 Competition).
+                            Emisiones: Entre 243-249 g/km (M850i xDrive) y 255-265 g/km (M8 Competition).
+                            Equipamiento destacado: Paquete aerodinámico M, llantas M de 19", frenos M Sport, volante M de cuero, asientos "Merino".
+                        </p>
+                    </div>
+                    <div class="car-image">
+                        <img id="imgIdbmw" src="Multimedia/bmw2.jpg">
+                    </div>
+                </div>
+                <div class="car-buttons">
+                    <button onclick="previewImage()"><img class="img_button" src="Multimedia/atras.png"></button>
+                    <button onclick="nextImage()"><img class="img_button" src="Multimedia/adelante.png"></button>
+                </div>
+            </div>
+            <!-- Repite la estructura para Jaguar y Rolls Royce -->
+            <div class="section_car" id="section_car-jaguar">
+                <div class="car-content">
+                    <div class="car-text">
+                        <h2 class="texto__inicial">Lleva tu Jaguar</h2>
+                        <p>
+                            Motor: Potencia a medida. Desde motores de 4 cilindros turbo hasta V8 supercargados, encuentra el motor perfecto para tu estilo de conducción.
+                            Consumo: Eficiencia sin sacrificar el rendimiento. Consumo combinado de combustible entre 7.5 y 11.1 l/100 km.
+                            Desempeño: Aceleración y manejo deportivo. Disfruta de una experiencia de conducción emocionante.
+                        </p>
+                    </div>
+                    <div class="car-image">
+                        <img id="imgIdjaguar" src="Multimedia/png-jaguar.png">
+                    </div>
+                </div>
+                <div class="car-buttons">
+                    <button onclick="previewImage2()"><img class="img_button" src="Multimedia/atras.png"></button>
+                    <button onclick="nextImage2()"><img class="img_button" src="Multimedia/adelante.png"></button>
+                </div>
+            </div>
+            <div class="section_car" id="section_car-rollsroyce">
+                <div class="car-content">
+                    <div class="car-text">
+                        <h2 class="texto__inicial">Lleva tu Rolls Royce</h2>
+                        <p>
+                            Motor: Impulsor V12 de 6.75 litros, que eroga una potencia máxima de 563 CV y un par motor de 850 Nm.
+                            Desempeño: Acelera de 0 a 100 km/h en solo 4.8 segundos y alcanza una velocidad máxima de 250 km/h.
+                            Consumo: Consumo combinado de combustible de aproximadamente 15.7 l/100 km.
+                        </p>
+                    </div>
+                    <div class="car-image">
+                        <img id="imgIdrollsroyce" src="Multimedia/Rolls-Royce2.png">
+                    </div>
+                </div>
+                <div class="car-buttons">
+                    <button onclick="previewImage3()"><img class="img_button" src="Multimedia/atras.png"></button>
+                    <button onclick="nextImage3()"><img class="img_button" src="Multimedia/adelante.png"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <strong>Venta de vehiculos de alta gama</strong> Copyright 2024</footer>
+</body>
+</html>
