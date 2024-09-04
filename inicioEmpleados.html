@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de carros</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="src/login.js"></script>
     <link rel="short icon" href="Multimedia/favicon.png" type="image/x-icon">
 </head>
@@ -24,25 +24,24 @@
         </div>
     </nav>
     <main>
-        <section class="form-container">
-            <h2>Inicio de sesión para empleados</h2>
-            <form id="inicio_usuarios">
-                <div class="form-group">
+        <section id="login">
+            <h2>Inicio de sesión para empleados:</h2>
+            <form id="loginForm" class="formulario">
+                <div>
                     <label for="empleado_id">Usuario:</label>
-                    <input type="text" id="empleado_id" name="empleado_id" required autocomplete="empleado_id">
+                    <input type="text" id="empleado_id" name="empleado_id" required> 
                 </div>
-                <div class="form-group">
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" id="contrasena" name="contrasena" required>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="contrasena" name="password" required>
                 </div>
-                <div id="error-message" style="color: red; display: none;">Las contraseñas no coinciden.</div>
-                <div class="form-group">
-                    <button type="submit">Iniciar sesión</button>
+                <div>
+                    <button type="submit">Ingresar</button>
                 </div>
             </form>
             <p id="loginMessage"></p>
         </section>
-        </main>
+    </main>
     <footer> <strong>Venta de vehiculos de alta gama</strong> Copyright 2024</footer>
 </body>
 </html>

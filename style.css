@@ -201,7 +201,7 @@ p {
 }
 
 /* Estilos del contenedor del formulario */
-.form-container {
+.formulario {
     display: flex;
     flex-direction: column; 
     justify-content:left;
@@ -218,34 +218,30 @@ p {
 }
 
 /* Estilos del título del formulario */
-.form-container h2 {
+.formulario h2 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-/* Estilos de los grupos del formulario */
-.form-group {
-    margin-bottom: 1rem;
-}
-
 /* Estilos de las etiquetas */
-.form-group label {
+.formulario label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 /* Estilos de los campos de entrada */
-.form-group input {
+.formulario input {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    box-sizing: border-box; 
 }
 
 /* Estilos del botón */
-.form-group button {
+.formulario button {
     width: 100%;
     padding: 0.7rem;
     background-color: #333;
@@ -255,10 +251,11 @@ p {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 /* Estilo del botón al pasar el ratón */
-.form-group button:hover {
+.formulario button:hover {
     background-color: #555;
 }
 
