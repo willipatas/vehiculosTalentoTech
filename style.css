@@ -50,6 +50,10 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.cerrar_sesion {
+    margin-left: 150px;
+}
+
 /* Estilo del logo */
 .header_logo {
     width: 50px;
@@ -256,9 +260,28 @@ p {
     margin-top: 20px;
 }
 
+
 /* Estilo del botón al pasar el ratón */
 .formulario button:hover {
     background-color: #555;
+}
+
+/* Estilos de las tablas */
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-color: #fff;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+th {
+    background-color:#010100;
 }
 
 /* Barra inferior */
