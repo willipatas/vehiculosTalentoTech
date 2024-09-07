@@ -4,9 +4,9 @@ window.onload = (event) => {
     //console.log(data);
     loadEmpleadosRegistrados();
 
-    const crearCliente = document.getElementById('crear_cliente');
+    const boton_crear_cliente = document.getElementById('boton_crear_cliente');
 
-    crearCliente.addEventListener('click', function(event){
+    boton_crear_cliente.addEventListener('click', function(event){
         window.location.href = '../panel_empleados/crearCliente.html';
     });
         
