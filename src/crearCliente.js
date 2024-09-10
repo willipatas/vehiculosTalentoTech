@@ -24,9 +24,6 @@ window.onload = (event) => {
             });
 
             const data = await response.json();
-            console.log(data);
-            const encodeData = btoa(JSON.stringify(data));
-            console.log(encodeData);
 
             if (response.ok) {
                 registrationMessage.textContent = 'Registro Exitoso';
