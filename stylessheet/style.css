@@ -18,12 +18,24 @@ header {
     background-color: #B50000;
     color: #f2f2f2;
     padding: 10px;
-    text-align: center;
     margin-bottom: 20px;
+    display: flex;           
+    align-items: center;    
+    justify-content: center; 
+    text-align: center;     
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    display: flex;          
+    align-items: center;   
+    margin: 0;             
+}
+
+.header_logo {
+    width: 250px;           
+    height: auto;          
+    margin-left: 10px;   
+    border-radius: 15px;
 }
 
 /* Navegación */
@@ -54,13 +66,6 @@ nav ul li a:hover {
     margin-left: 150px;
 }
 
-/* Estilo del logo */
-.header_logo {
-    width: 50px;
-    border-radius: 150%;
-    float: left;
-    padding: 0;
-}
 
 .intro {
     display: grid;
@@ -205,20 +210,19 @@ p {
     background-color: #DE0000;
 }
 
-/* Estilos del contenedor del formulario */
+/* Estilos del formulario */
 .formulario {
     display: flex;
     flex-direction: column; 
-    justify-content:left;
-    align-items:first-baseline;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: stretch; 
+    background-color: #fff; 
+    padding: 1rem; 
+    border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px; 
+    max-width: 600px; 
     margin: 0 auto; 
-    box-sizing: border-box; 
     color: #3c3d3c;
 }
 
@@ -231,7 +235,7 @@ p {
 
 /* Estilos de las etiquetas */
 .formulario label {
-    display: block;
+    display: flex;
     margin-bottom: 0.3rem;
     font-weight: bold;
     margin-top: 15px;
@@ -240,10 +244,25 @@ p {
 /* Estilos de los campos de entrada */
 .formulario input {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.3rem; /* Aumenta el padding para mayor comodidad */
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box; 
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente si es necesario */
+}
+
+.formulario select {
+    width: 100%; 
+    padding: 0.3rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 0.8rem; 
+    box-sizing: border-box; 
+    background-color: #fff; 
+    color: #333; 
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
 }
 
 /* Estilos del botón */
@@ -317,6 +336,7 @@ p {
 table {
     margin-top: 20px;
     width: 100%;
+    border-collapse: collapse;
     border-color: #fff;
 }
 
@@ -324,6 +344,7 @@ th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #DDD;
+    word-wrap: break-word;
 }
 
 th {
@@ -344,24 +365,8 @@ footer {
 
 /* Responsividad */
 @media (max-width: 800px) {
-    
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-container {
-        margin-bottom: 10px;
-    }
-
-    .text-container {
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-
-    .section_car {
-        flex-direction: column;
-        grid-template-columns: 1fr;
+    .header_logo {
+        width: 100px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
     }
 
     .car-content {
@@ -369,12 +374,95 @@ footer {
         align-items: center;
     }
 
-    .car-image img {
+    .car-buttons {
+        flex-direction: column; /* Ajustado para pantallas pequeñas */
+        align-items: center;
+    }
+
+    .image__container img {
+        height: auto; /* Mantiene la proporción de la imagen */
         max-width: 100%;
     }
 
-    .car-buttons {
-        flex-direction:row;
-        align-items: center;
+    .text-container {
+        font-size: 1rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+
+
+}
+
+/* Responsividad adicional para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .formulario h2 {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto del título del formulario */
+    }
+
+    .header_logo {
+        width: 80px; /* Reduce el tamaño del logo en pantallas muy pequeñas */
+    }
+
+    .text-container {
+        padding: 0 5px;
+    }
+
+    p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto de los párrafos */
+    }
+
+}
+
+/* Responsividad para tablas */
+@media (max-width: 800px) {
+    table {
+        display: block; /* Permite el scroll horizontal en pantallas pequeñas */
+        overflow-x: auto;
+        white-space: nowrap; /* Evita que el texto se envuelva y agrega un scroll horizontal */
+    }
+
+    th, td {
+        display: block; /* Hace que cada celda se comporte como un bloque en pantallas pequeñas */
+        width: 100%; /* Asegura que las celdas ocupen todo el ancho disponible */
+    }
+
+    th {
+        text-align: center; /* Centra el texto en los encabezados para mejorar la legibilidad */
+    }
+}
+
+
+
+/* Responsividad para formularios */
+@media (max-width: 800px) {
+    .formulario {
+        padding: 1rem;
+    }
+
+    .formulario h2 {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto del título del formulario */
+    }
+
+    .formulario input, .formulario button {
+        width: 100%; /* Asegura que los campos de entrada y botones ocupen todo el ancho disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+    }
+
+    .formulario label {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto de las etiquetas */
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        padding: 0.5rem; /* Reduce el padding en pantallas muy pequeñas */
+    }
+
+    .formulario h2 {
+        font-size: 1rem; /* Ajusta aún más el tamaño del texto del título del formulario */
+    }
+
+    .formulario input, .formulario button {
+        padding: 0.5rem; /* Reduce el padding de los campos de entrada y botones */
+        font-size: 0.9rem; /* Ajusta el tamaño del texto en los campos de entrada y botones */
     }
 }
