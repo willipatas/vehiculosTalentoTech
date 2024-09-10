@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de carros</title>
+    <link rel="stylesheet" href="/stylessheet/style.css">
+    <script src="/src/vehiculos/vehiculos_registrados.js"></script>
+
+
+    <link rel="icon" href="/Multimedia/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Venta de carros<img class="header_logo" src="/Multimedia/favicon.png" alt="header_logo"></h1>
+    </header>
+    <nav>  
+        <div>
+            <ul>
+                <li><a href="/index.html" target="_self">Home</a></li>
+                <li><a href="/pages/panel_empleados/clientes_registrados.html" target="_self">Clientes</a></li>
+                <li><a href="/pages/panel_vehículos/vehiculos.html" target="_self">Vehículos</a></li>
+                <li><a href="/pages/panel_alquileres/alquileres.html" target="">Vehículos arrendados</a></li>
+                <li class="cerrar_sesion"><a href="#" id="logoutLink" target="_self">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2>Lista de vehículos alquilados</h2>
+            <button id="boton_crear_alquiler" class="boton_tablas" type="submit">Crear alquiler de vehículo</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre del cliente:</th>
+                        <th>Vehículo alquilado: </th>
+                        <th>Empleado que alquiló:</th>
+                        <th>Fecha inicio del alquiler:</th>
+                        <th>Fecha fin del alquiler:</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla_vehiculos_alquilados">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer> <strong>Venta de vehiculos de alta gama</strong> Copyright 2024</footer>
+</body>
+</html>

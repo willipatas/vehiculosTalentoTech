@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de carros</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="src/login.js"></script>
-    <link rel="icon" href="Multimedia/favicon.png" type="image/x-icon">
+    <title>Pagina de carros</title>
+    <link rel="stylesheet" href="/stylessheet/style.css">
+    <script src="/src/clientes/crearCliente.js"></script>
+
+
+    <link rel="icon" href="../Multimedia/logo.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Venta de carros<img class="header_logo" src="Multimedia/favicon.png" alt="header_logo"></h1>
+        <h1>Venta de carros<img class="header_logo" src="../Multimedia/favicon.png" alt="header_logo"></h1>
     </header>
     <nav>  
         <div>
             <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="sobre-nosotros.html" target="_self">Sobre nosotros</a></li>
-                <li><a href="servicios.html" target="_self">Servicios</a></li>
-                <li><a href="registro.html" target="_self">Registro</a></li>
-                <li><a href="inicioEmpleados.html" target="_self">Iniciar sesión</a></li>
+                <li><a href="/index.html" target="_self">Home</a></li>
+                <li><a href="/pages/panel_empleados/clientes_registrados.html" target="_self">Clientes</a></li>
+                <li><a href="/pages/panel_vehículos/vehiculos.html" target="_self">Vehículos</a></li>
+                <li><a href="/pages/panel_alquileres/alquileres.html" target="">Vehículos arrendados</a></li>
+                <li class="cerrar_sesion"><a href="#" id="logoutLink" target="_self">Cerrar sesión</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <section class="form-container">
-            <h2>Registro para nuevos clientes</h2>
-            <form id="registrationForm" class="formulario">
+        <section id="crear_cliente">
+            <h2>Registrar nuevo cliente</h2>
+            <form id="clienteForm" class="formulario">
                 <div>
                     <label for="nombre_cliente">Nombre completo:</label>
                     <input type="text" id="nombre_cliente" name="name" required>
                 </div>
                 <div>
                     <label for="email">Correo electrónico:</label>
-                    <input type="correo_cliente" id="correo_cliente" name="email" required>
+                    <input type="email" id="correo_cliente" name="email" required>
                 </div>
                 <div>
                     <label for="telefono">Teléfono:</label>
@@ -53,12 +54,7 @@
                     <input type="password" id="contrasena" name="contrasena" required>
                 </div>
                 <div>
-                    <label for="confirmContrasena">Confirmar contraseña:</label>
-                    <input type="password" id="confirmContrasena" name="confirmContrasena" required>
-                </div>
-                <div id="error-message" style="color: red; display: none;">Las contraseñas no coinciden.</div>
-                <div>
-                    <button type="submit">Registrarse</button>
+                    <button type="submit">Crear cliente</button>
                 </div>
             </form>
             <p id="registrationMessage"></p>

@@ -86,32 +86,6 @@ const previewImage3 = () => {
 };
 
 
-/* Formulario */
-
-window.addEventListener('load', () => {
-    const form = document.getElementById('registrationForm');
-    form.addEventListener("submit",(event)=>{try {
-        const name = document.getElementById('inputName').value;
-        const lastName = document.getElementById('inputLastName').value;
-        const email = document.getElementById('inputEmail').value;
-        const message = document.getElementById('textMessage').value;
-    
-        if(name === '' || lastName === '' || email === '' || message == ""){
-            alert('Por favor rellene los campos.');
-        } else {
-            const contactMessage = {
-                name,
-                lastName,
-                email,
-                message
-            };
-            console.log(contactMessage);
-            alert('Su mensaje ha sido enviado con Exito.')
-        }
-    } catch (error) {
-        console.error(error);
-    }});});
-
 /* Confirmación en el formulario de que las contraseñas escritas son las mismas */
 
     document.addEventListener("DOMContentLoaded", function() {
