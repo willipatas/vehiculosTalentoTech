@@ -3,7 +3,7 @@ window.onload = (event) => {
     const loginMessage = document.getElementById('loginMessage');
     const registrationForm = document.getElementById('registrationForm');
     const registrationMessage = document.getElementById('registrationMessage');
-    const apiUrl = 'http://localhost:3000'; 
+    const apiUrl = 'https://proyecto-vehiculos-talentotech.vercel.app'; 
 
     // Asegúrate de que loginForm existe antes de agregar el event listener
     if (loginForm) {

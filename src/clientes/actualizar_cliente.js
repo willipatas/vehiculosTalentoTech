@@ -23,7 +23,7 @@ window.onload = async (event) => {
     });
 };
 
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://proyecto-vehiculos-talentotech.vercel.app';
 
 function getQueryParams(param) {
     const urlParams = new URLSearchParams(window.location.search);

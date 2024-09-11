@@ -1,5 +1,5 @@
 window.onload = (event) => {
-    const apiUrl = 'http://localhost:3000'; 
+    const apiUrl = 'https://proyecto-vehiculos-talentotech.vercel.app';
     const clienteForm = document.getElementById('vehiculoForm');
     
 

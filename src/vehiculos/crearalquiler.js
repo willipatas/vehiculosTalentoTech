@@ -1,5 +1,5 @@
 window.onload = (event) => {
-    const apiUrl = 'http://localhost:3000'; 
+    const apiUrl = 'https://proyecto-vehiculos-talentotech.vercel.app';
     const alquilerForm = document.getElementById('alquilerForm');
     const registrationMessage = document.getElementById('registrationMessage'); // Mensaje para mostrar el resultado de la operación
 
