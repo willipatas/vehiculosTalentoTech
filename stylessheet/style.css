@@ -244,11 +244,11 @@ p {
 /* Estilos de los campos de entrada */
 .formulario input {
     width: 100%;
-    padding: 0.3rem; /* Aumenta el padding para mayor comodidad */
+    padding: 0.3rem; 
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box; 
-    font-size: 0.9rem; /* Ajusta el tamaño de fuente si es necesario */
+    font-size: 0.9rem; 
 }
 
 .formulario select {
@@ -366,7 +366,7 @@ footer {
 /* Responsividad */
 @media (max-width: 800px) {
     .header_logo {
-        width: 100px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+        width: 100px; 
     }
 
     .car-content {
@@ -375,31 +375,30 @@ footer {
     }
 
     .car-buttons {
-        flex-direction: column; /* Ajustado para pantallas pequeñas */
+        flex-direction: column; 
         align-items: center;
     }
 
     .image__container img {
-        height: auto; /* Mantiene la proporción de la imagen */
+        height: auto; 
         max-width: 100%;
     }
 
     .text-container {
-        font-size: 1rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        font-size: 1rem; 
     }
-
-
 
 }
 
 /* Responsividad adicional para pantallas aún más pequeñas */
 @media (max-width: 480px) {
+    
     .formulario h2 {
-        font-size: 1.2rem; /* Ajusta el tamaño del texto del título del formulario */
+        font-size: 1.2rem; 
     }
 
     .header_logo {
-        width: 80px; /* Reduce el tamaño del logo en pantallas muy pequeñas */
+        width: 80px; 
     }
 
     .text-container {
@@ -407,7 +406,7 @@ footer {
     }
 
     p {
-        font-size: 0.9rem; /* Ajusta el tamaño del texto de los párrafos */
+        font-size: 0.9rem; 
     }
 
 }
@@ -415,18 +414,18 @@ footer {
 /* Responsividad para tablas */
 @media (max-width: 800px) {
     table {
-        display: block; /* Permite el scroll horizontal en pantallas pequeñas */
+        display: block; 
         overflow-x: auto;
-        white-space: nowrap; /* Evita que el texto se envuelva y agrega un scroll horizontal */
+        white-space: nowrap; 
     }
 
     th, td {
-        display: block; /* Hace que cada celda se comporte como un bloque en pantallas pequeñas */
-        width: 100%; /* Asegura que las celdas ocupen todo el ancho disponible */
+        display: block; 
+        width: 100%; 
     }
 
     th {
-        text-align: center; /* Centra el texto en los encabezados para mejorar la legibilidad */
+        text-align: center; 
     }
 }
 
@@ -439,30 +438,31 @@ footer {
     }
 
     .formulario h2 {
-        font-size: 1.2rem; /* Ajusta el tamaño del texto del título del formulario */
+        font-size: 1.2rem; 
     }
 
     .formulario input, .formulario button {
-        width: 100%; /* Asegura que los campos de entrada y botones ocupen todo el ancho disponible */
-        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+        width: 100%; 
+        box-sizing: border-box; 
     }
 
     .formulario label {
-        font-size: 0.9rem; /* Ajusta el tamaño del texto de las etiquetas */
+        font-size: 0.9rem; 
     }
 }
 
 @media (max-width: 480px) {
+    
     .formulario {
-        padding: 0.5rem; /* Reduce el padding en pantallas muy pequeñas */
+        padding: 0.5rem; 
     }
 
     .formulario h2 {
-        font-size: 1rem; /* Ajusta aún más el tamaño del texto del título del formulario */
+        font-size: 1rem; 
     }
 
     .formulario input, .formulario button {
-        padding: 0.5rem; /* Reduce el padding de los campos de entrada y botones */
-        font-size: 0.9rem; /* Ajusta el tamaño del texto en los campos de entrada y botones */
+        padding: 0.5rem; 
+        font-size: 0.9rem; 
     }
 }

@@ -5,7 +5,7 @@ window.onload = (event) => {
     const registrationMessage = document.getElementById('registrationMessage');
     const apiUrl = 'https://proyecto-vehiculos-talentotech.vercel.app'; 
 
-    // Asegúrate de que loginForm existe antes de agregar el event listener
+
     if (loginForm) {
         loginForm.addEventListener('submit', async function(event){
             event.preventDefault(); // Prevenir que se envie el formulario de manera tradicional.
